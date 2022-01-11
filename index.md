@@ -490,7 +490,11 @@ Now that the setup is ready to be used, testing is in order. For this the client
 27. This is also conform the policy that we have defined and assigned to the folder
 
 # Teams
-With Secret Server teams, administrators can create special groups called teams to restrict what users can see. A team bundles users and groups to assign them the same rules as to what other users and sites are visible to them. For example, a managed service provider could isolate their customers from seeing other customer’s user accounts or a large company could “firewall” their users by department. Site visibility can also be restricted by teams.
+With Secret Server teams, administrators can create special groups called teams to restrict what users can see. A team bundles users and groups to assign them the same rules as to what other users and sites are visible to them. For example, a managed service provider could isolate their customers from seeing other customer’s user accounts or a large company could “firewall” their users by department. Site visibility can also be restricted by teams. 
+
+Use the below diagram to understand what is being configured in this lab.
+
+![Secret Policy](images/sources/lab-073.png)
 
 ## Create a Team Role
 1. In the Secret Server UI, navigate to Admin > Roles
