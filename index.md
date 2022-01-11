@@ -223,6 +223,19 @@ To be able to manage the second infrastructure via the DE, discovery needs to be
 # Proxying SSH and RDP
 To be able to connect to the second organisation Secret Server needs to be configured. There a couple a ways to do this. One is to keep the secrets in the Vault and use them to connect to the servers via RDP or SSH, but this will send the credentials over the network to the server. This means that the machine you are starting the connection from needs to have a direct connection to the server. Another option is to use the DE to proxy the connection towards the server. This will NOT have the machine connect directly to the server, but use the proxy as the endpoint of the connection. This last option is what is the most secure path.
 
+## Overview of the traffic
+Below diagram show the traffic for SSH and RDP and the involved machines from the infrastructure
+
+### Scenario 1:
+Connect to greensafe.lab ssh host, apps-unix.greensafe.lab, from the client VM in a SSH proxied connection
+
+![Discovery - 2](images/sources/lab-071.png)
+
+### Scenario 2:
+Connect to greensafe.lab RDP host, dc-server.greensafe.lab, from the client VM in a RDP proxied connection
+
+![Discovery - 2](images/sources/lab-072.png)
+
 ## Enabling Proxying
 1. Navigate to Admin > Proxying > SSH Proxy tab
 2. Enable SSH Proxy and click Save
