@@ -4,6 +4,9 @@ This lab will be a sequel to the Secret Server Training Lab where the thylab.loc
 
 This lab is emulating a scenario in which an organisation (thylab.local) has merged with a second organisation (greensafe.lab domain) and the administrators for the first organisation need the ability to control the second AD using Secret Server.
 
+Below is a diagram of the two organisation as it has been build in the lab infrastructure.
+
+![Lab Infrastructure](images/sources/lab-01a.png)
 
 This lab will highlight the following topics:
 1. Installing RabbitMQ
@@ -20,7 +23,7 @@ This lab will highlight the following topics:
 4. Create site and install Distributed Engine in one site
 5. Create Site and install Distributed Engine in second sites
 
-## Configure Secret Server for new Site Connector
+# Configure Secret Server for new Site Connector
 
 A site Connector is what binds the Secret Server instance with its Distributed Engine(s). The Site Connector is using the message queueing mechanism to make sure jobs and results are exchanged in a modular fashion between the DEs and Secret Server. This also makes it possible to implement Secret Server as a High Availability solution.
 The support two Message Queueing (MQ) mechanisms are MemoryMQ and Rabbit MQ. The first one is suitable for very small or testing/demo installations. The problem with this MQ is that it runs in the memory of the Secret Server and is therefore limited. It can not be clustered is one of its limitations. The other solution, highly recommended, is using [RabbitMQ](https://rabitmq.com). This MQ is a dedicated instance that is specially built for the task and seen as one of the popular open source MQ.
