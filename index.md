@@ -702,7 +702,7 @@ Use the below diagram to understand what is being configured in this lab.
     
     ![Team - 1](images/sources/lab-30a.png)
 
-8. User JBloggs (Thycotic@2022! and then you need to change the password) has no access at all.
+8. User JBloggs (Thycotic/4u and then you need to change the password) has no access at all.
 9. User hpatel with password Thycotic@2022! in the Thylab domain has the same limitation on the Enter Computer. This user should be able to type in the name of the server he wants to connect to.
 10. As this is not what is needed, changes are to be made.
 
