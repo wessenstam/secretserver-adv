@@ -1,0 +1,8 @@
+# HTML Build files from Sphinx
+_build
+builds
+build
+# Sources Documents and executables
+*.exe
+*.pdf
+*.docx
