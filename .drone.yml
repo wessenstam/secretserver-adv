@@ -1,0 +1,23 @@
+kind: pipeline
+type: exec
+name: default
+
+steps:
+- name: Sync Files (Main)
+  commands:
+  - git clone --branch main "https://github.com/wessenstam/$DRONE_REPO_NAME/" /tmp/$DRONE_COMMIT_SHA
+  - docker run --rm --name build_dev_html -v /home/ubuntu/www/html/:/develop -v /tmp/$DRONE_COMMIT_SHA:/web wessenstam/sphinx_server:2.2 /usr/bin/sphinx-build -a . /develop/$DRONE_REPO_NAME
+  - chown -Rf ubuntu:ubuntu /home/ubuntu/www/html/$DRONE_REPO_NAME
+  - rm -Rf /tmp/$DRONE_COMMIT_SHA
+  when:
+    branch:
+    - main
+  
+- name: Build Dev HTML(dev)
+  commands:
+  - git clone --branch dev "https://github.com/wessenstam/$DRONE_REPO_NAME/" /tmp/$DRONE_REPO_NAME
+  - docker run --rm --name build_dev_html -v /var/www/html:/develop -v /tmp/$DRONE_REPO_NAME:/web wessenstam/sphinx_server:2.2 /usr/bin/sphinx-build -a . /develop/$DRONE_REPO_NAME/dev
+  - rm -Rf /tmp/$DRONE_REPO_NAME
+  when:
+    branch:
+    - dev 
