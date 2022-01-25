@@ -56,7 +56,7 @@ source_suffix = {
 master_doc = 'index'
 
 # General information about the project.
-project = u'Secret Server Advanced Training'
+project = u'Secret Server Advanced'
 copyright = u'2022 ThycoticCentrify'
 author = u'ThycoticCentrify Technical Enablement'
 
