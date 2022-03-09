@@ -7,10 +7,10 @@ steps:
   commands:
   # Get the repo and build the HTML files
   - git clone --branch main "https://github.com/wessenstam/$DRONE_REPO_NAME/" /tmp/$DRONE_COMMIT_SHA
-  - docker run --rm --name build_dev_html -v /home/ubuntu/www/html/:/develop -v /tmp/$DRONE_COMMIT_SHA:/web wessenstam/sphinx_server:2.2 /usr/bin/sphinx-build -a . /develop/$DRONE_REPO_NAME
+  - docker run --rm -v /home/ubuntu/www/html/:/develop -v /tmp/$DRONE_COMMIT_SHA:/web wessenstam/sphinx_server:2.2 /usr/bin/sphinx-build -a . /develop/$DRONE_REPO_NAME
   - chown -Rf ubuntu:ubuntu /home/ubuntu/www/html/$DRONE_REPO_NAME
   # Use the files to create the PDF
-  - docker run --rm --name build_dev_pdf -v /tmp/$DRONE_COMMIT_SHA:/docs wessenstam/sphinx_latexpdf make latexpdf
+  - docker run --rm -v /tmp/$DRONE_COMMIT_SHA:/docs wessenstam/sphinx_latexpdf make latexpdf
   - cp /tmp/$DRONE_COMMIT_SHA/_build/latex/*.pdf /home/ubuntu/www/html/$DRONE_REPO_NAME/
   # Clean up
   - rm -Rf /tmp/$DRONE_COMMIT_SHA
@@ -22,7 +22,7 @@ steps:
 - name: Build Dev HTML(dev)
   commands:
   - git clone --branch dev "https://github.com/wessenstam/$DRONE_REPO_NAME/" /tmp/$DRONE_REPO_NAME
-  - docker run --rm --name build_dev_html -v /var/www/html:/develop -v /tmp/$DRONE_REPO_NAME:/web wessenstam/sphinx_server:2.2 /usr/bin/sphinx-build -a . /develop/$DRONE_REPO_NAME/dev
+  - docker run --rm -v /var/www/html:/develop -v /tmp/$DRONE_REPO_NAME:/web wessenstam/sphinx_server:2.2 /usr/bin/sphinx-build -a . /develop/$DRONE_REPO_NAME/dev
   - rm -Rf /tmp/$DRONE_REPO_NAME
   when:
     branch:
