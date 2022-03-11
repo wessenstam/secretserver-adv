@@ -57,8 +57,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Secret Server Advanced'
-copyright = u'2022 ThycoticCentrify'
-author = u'ThycoticCentrify Technical Enablement'
+copyright = u'2022 Delinea'
+author = u'Delinea Technical Enablement'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -100,7 +100,7 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 # (Optional) Logo. Should be small enough to fit the navbar (ideally 24x24).
 # Path should be relative to the ``_static`` files directory.
 
-html_logo = "_static/ThycoticWorkshops.svg"
+html_logo = "_static/Delinea.svg"
 
 html_favicon = "_static/favicon.ico"
 
