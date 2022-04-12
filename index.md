@@ -63,7 +63,7 @@ The supported two Message Queueing (MQ) mechanisms are MemoryMQ and Rabbit MQ. T
 7. Click Configure
 8. Click View Credentials. Keep this open as it needed in the next steps
    ![RabbitMQ-Credentials](images/sources/lab-002.png)
-9. Open Windows Explorer
+9. Back at the RabbitMQ server, open Windows Explorer
 10. Navigate to %PROGRAMFILES% > Thycotic Software Ltd > RabbitMq Helper and run Thycotic.RabbitMq.Helper.exe
 11. This will open a PowerShell command line
 12. Copy these lines into the PowerShell session:
