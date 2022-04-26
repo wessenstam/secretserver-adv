@@ -55,7 +55,7 @@ The supported two Message Queueing (MQ) mechanisms are MemoryMQ and Rabbit MQ. T
 
 ## Installation of RabbitMQ
 1. Open the RabbitMQ server and login as adm-training
-2. Open the URL https://updates.thycotic.net/links.ashx?RabbitMqInstaller to download the RabbitMQ Helper
+2. Open the URL https://thycoticdownloadsprod.blob.core.windows.net/ssintegrations/RabbitMQHelper/Delinea.RabbitMq.Helper.9.5.msi to download the RabbitMQ Helper
 3. Run the downloaded MSI file
 4. Open Secret Server at https://sspm.thylab.lab/SecretServer 
 5. Login as ss-admin with the password you set (this will log you out of the SSPM Secret Server UI if you refresh that browser on the SSPM server)
@@ -71,12 +71,12 @@ The supported two Message Queueing (MQ) mechanisms are MemoryMQ and Rabbit MQ. T
 ```powershell
 $cred = Get-Credential -Message "Enter the initial RabbitMq user username and password";
 #if you don't want to be prompted you can hardcode your credential in the script
-#$password = ConvertTo-SecureString "PlainTextPassword" -AsPlainText -Force
-#$cred = New-Object System.Management.Automation.PSCredential ("CustomUserName", $password)
+#$password = ConvertTo-SecureString “PlainTextPassword” -AsPlainText -Force
+#$cred = New-Object System.Management.Automation.PSCredential (“CustomUserName”, $password)
 
 Install-Connector `
     -Credential $cred `
-    -UseThycoticMirror -Verbose
+    -UseDelineaMirror -Verbose
 ```
 ---
 
