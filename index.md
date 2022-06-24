@@ -1500,10 +1500,10 @@ As you have found, it is relatively easy to create your own RPCs. Especially in 
 
 Since version 11.2 of Delinea Secret Server, Disaster Recovery (DR) has been added. This option makes it possible to have a standby instance available for Secrets. This part of the lab is on how to setup DR between On-Prem instances. The following scenario's can be setup in real life and are supported:
 
-- On-Prem to Secret Server Cloud
-- Secret Server Cloud to On-Prem
+- On-Prem to Secret Server Cloud (but is an edge case)
+- On-Prem to On-Prem
 - Secret Server Cloud to Secret Server Cloud
-- Secret Server Cloud to On-Prem (but is an edge case)
+- Secret Server Cloud to On-Prem 
 
 ---
 
