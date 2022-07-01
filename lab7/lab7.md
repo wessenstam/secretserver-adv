@@ -185,7 +185,7 @@ This part is where we are going to use the scripts and the helper Secret. First 
 As you have seen in this part of the lab, PowerShell scripts can be used to do some powerfull stuff. In this case it was "just" en-/disable an account on Checkout, but there are lots of other things that can be done. Think about a script which creates a firewall change using an API call so the user can login to the SSH server that is behind this firewall. After the secret has been checked-in the change will be reverted.
 
 
-.. raw:: html
+
   
   <HR>
   <center><H1 style="color:#00FF59">This concludes this part of the lab</H1></center>

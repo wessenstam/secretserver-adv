@@ -17,7 +17,7 @@ The supported two Message Queueing (MQ) mechanisms are MemoryMQ and Rabbit MQ. T
 
 ## Configure Secret Server
 1. Open the **SSPM** and login as **adm-training** 
-2. Open Secret Server at **https://sspm.thylab.lab/SecretServer**
+2. Open Secret Server at **https://sspm.thylab.local/SecretServer**
 3. Login as **ss-admin** with the password **Delinea/4u**
 4. You may be asked to reset the password. Use you own password as long as you remember it ;)..
 5. Navigate to Administrattion > Setup & System Maintenance > Distributed Engine
@@ -39,11 +39,11 @@ The supported two Message Queueing (MQ) mechanisms are MemoryMQ and Rabbit MQ. T
 1. Open the **RabbitMQ** server and login as **adm-training**
 2. Open **Chrome** and open the URL **https://thycoticdownloadsprod.blob.core.windows.net/ssintegrations/RabbitMQHelper/Delinea.RabbitMq.Helper.9.5.msi** to download the RabbitMQ Helper
 3. Run the downloaded MSI file
-4. Open Secret Server at https://sspm.thylab.lab/SecretServer 
+4. Open Secret Server at https://sspm.thylab.local/SecretServer 
 5. Login as ss-admin with the password you set (this will log you out of the SSPM Secret Server UI if you refresh that browser on the SSPM server)
-6. Navigate to Administrattion > Setup & System Maintenance > Distributed Engine
-7. Click Configure
-8. Click View Credentials. Keep this open as it needed in the next steps
+6. Navigate to **Administration >> > Setup & System Maintenance > Distributed Engine**
+7. Click **Configure**
+8. Click **View Credentials**. Keep this open as it needed in the next steps
    
    ![RabbitMQ-Credentials](images/ss-adv-0003.png)
 
@@ -128,7 +128,7 @@ This script assumes your environment has an internet connection. If not, please 
 
     ![Add Site](images/ss-adv-0009.png)
 
-7. Move the mouse on top of the **RabbitMQ.thylab.local** server
+7. *Expand the thylab.local site* and move the mouse on top of the **RabbitMQ.thylab.local** server
 8. On the right side of that DE, *click the three dots* and select **Activate**
 
     ![Add Site](images/ss-adv-0010.png)
@@ -146,7 +146,6 @@ You may have to refresh your browser to see the two green checks
 
 10. Close the Browser screen and logout of the server as we are ready for now on this server
 
-.. raw:: html
   
   <HR>
   <center><H1 style="color:#00FF59">This concludes this part of the lab</H1></center>

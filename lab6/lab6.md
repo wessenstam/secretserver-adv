@@ -209,7 +209,7 @@ After a few weeks in Dennis has been given the full admin rights on all servers 
 10. Check the secret back in
 
 
-.. raw:: html
+
   
   <HR>
   <center><H1 style="color:#00FF59">This concludes this part of the lab</H1></center>

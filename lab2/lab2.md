@@ -54,7 +54,7 @@ Now that the second organisation is added as a site, it needs to be provided wit
 
     ![Add Site](images/ss-adv-0016.png)
 
-.. raw:: html
+
   
   <HR>
   <center><H1 style="color:#00FF59">This concludes this part of the lab</H1></center>

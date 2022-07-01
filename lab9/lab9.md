@@ -175,7 +175,7 @@ Now that we have the RCP assigned to a newly created Secret Template it is time 
 
 As you have found, it is relatively easy to create your own RPCs. Especially in situation where the default, or OOTB, RPCs are not enough this can come in handy...
 
-.. raw:: html
+
   
   <HR>
   <center><H1 style="color:#00FF59">This concludes this part of the lab</H1></center>

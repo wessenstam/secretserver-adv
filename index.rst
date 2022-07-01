@@ -103,7 +103,7 @@ Support to your environment
 
 Your instructor can help you "remotely". He/she is able to connect to your environment and discuss together where the issue is. When he/she connects to your environment the mouse movements are seen on your screen. Don't be scared it is not a virus, it's your instructor!!!
 
-.. raw:: html
+
   
   <HR>
   <center><H1 style="color:#00FF59">HAVE FUN!!!!</H1></center>

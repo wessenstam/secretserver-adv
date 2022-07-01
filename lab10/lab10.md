@@ -127,7 +127,7 @@ Now that we have the permissions set on both systems and we have a group, we can
 
     ![Scantemplates](images/ss-adv-0141.png)
     
-.. raw:: html
+
   
   <HR>
   <center><H1 style="color:#00FF59">This concludes this part of the lab</H1></center>

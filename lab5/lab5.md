@@ -174,7 +174,7 @@ Now that the setup is ready to be used, testing is in order. For this test the c
 9. Close the session using **CTRL+D**
 10. Logout of the Secret Server UI by *clicking the initials KR* in the upper right corner and select **Log Out**
 11. Click **Log in** and log in as **LScott** with **Centr1fy** and the **Greensafe** domain
-12. She only has access to the **Greensafe Windows servers** and *can see the password*
+12. She has access to the **Greensafe Windows servers** and *can see the password*
 
     ![Test Confguration - 4](images/ss-adv-0055.png)
 
@@ -194,13 +194,13 @@ Now that the setup is ready to be used, testing is in order. For this test the c
 
     ![Secret Policy](images/ss-adv-0057.png)
 
-24. Run the RDP Launcher and select **any of the two servers** you see and select **thylab.local** as the Proxy Site then click **Launch Now**
+24. Run the RDP Launcher and select **DC1** you see and select **thylab.local** as the Proxy Site then click **Launch Now**
 
     ![Secret Policy](images/ss-adv-0058.png)
 
     ---
 
-    **Note** The dropdown box is due to the Secret Template that is used at the time the secret has been created. We will dive deeper into this later in the lab
+    **Note** The dropdown box is due to the Secret Template that is used at the time the secret has been created. We will dive deeper into this later in the lab.
 
     ---
 
@@ -228,7 +228,7 @@ As summary the three security settings:
 During the testing of the configuration, the conclusion is that (proved by the running three scenarios using three different users) the configured policies work as requested.
 
 
-.. raw:: html
+
   
   <HR>
   <center><H1 style="color:#00FF59">This concludes this part of the lab</H1></center>
