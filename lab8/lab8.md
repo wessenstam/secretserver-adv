@@ -241,7 +241,7 @@ Using this method, Extensible (custom) Discovery, anything that can be "discover
 ---
 
 
-.. raw:: html
+
   
   <HR>
   <center><H1 style="color:#00FF59">This concludes this part of the lab</H1></center>

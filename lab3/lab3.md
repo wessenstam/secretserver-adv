@@ -86,7 +86,7 @@ To be able to manage the second infrastructure via the DE, discovery needs to be
 
 4. This means the Discovery scan has run successfully and Secret Server can now start to control the accounts.
 
-.. raw:: html
+
   
   <HR>
   <center><H1 style="color:#00FF59">This concludes this part of the lab</H1></center>

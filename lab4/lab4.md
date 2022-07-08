@@ -60,7 +60,7 @@ Connect to greensafe.lab RDP host, dc-server.greensafe.lab, from the client VM i
 In this part of the lab we are going to check that we are using the proxy to connect to the server. Firstly SSH and then RDP connections. To connect to the remote machines secrets are needed. Then these secrets can be used to connect the machines using Secret Server and/or the DEs as proxy.
 
 ### Creating Extra Secrets
-1. Navigate to Secrets >> > IT Team > IT - Unix Admin
+1. Navigate to Secrets >> > IT Team > IT - Unix Team
 
     ![Secret](images/ss-adv-0030.png)
 
@@ -77,7 +77,7 @@ In this part of the lab we are going to check that we are using the proxy to con
 3. Click **Create Secret**
 4. click the **Security Tab**
 5. See that the Enable proxy is enabled (scroll down to see the setting)
-6. Navigate to Secrets >> > IT Team > IT - Server Admin
+6. Navigate to Secrets >> > IT Team > IT - Server Team
 7. Create a secret with the following parameters:
     - **Secret Template:** Windows Account
     - Secret name: Greensafe - Domain Controller
@@ -143,7 +143,5 @@ Make sure that the **apps-unix and CentOS Server** VMs are in a running state be
 
 2. Close the session by signing out
 
-.. raw:: html
-  
   <HR>
   <center><H1 style="color:#00FF59">This concludes this part of the lab</H1></center>

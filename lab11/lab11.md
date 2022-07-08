@@ -23,7 +23,7 @@ Which simplified is the same as the earlier shown picture
 
 ![Infra - SSPM+RabbitMQ+DEs](images/lab-11a.png)
 
-.. raw:: html
+
   
   <HR>
   <center><H1 style="color:#00FF59">This concludes the lab</H1></center>
