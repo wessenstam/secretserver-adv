@@ -52,23 +52,24 @@ The supported two Message Queueing (MQ) mechanisms are MemoryMQ and Rabbit MQ. T
 11. This will open a PowerShell command line
 12. Copy these lines into the PowerShell session:
 
-```powershell
-$cred = Get-Credential -Message "Enter the initial RabbitMq user username and password";
-#if you don't want to be prompted you can hardcode your credential in the script
-#$password = ConvertTo-SecureString “PlainTextPassword” -AsPlainText -Force
-#$cred = New-Object System.Management.Automation.PSCredential (“CustomUserName”, $password)
-
-Install-Connector `
-    -Credential $cred `
-    -UseDelineaMirror -Verbose
-```
-
----
-
-**Note**
-This script assumes your environment has an internet connection. If not, please check https://thycotic.github.io/rabbitmq-helper/installation/ for you Scenario.
-
---- 
+    ```powershell
+    $cred = Get-Credential -Message "Enter the initial RabbitMq user username and password";
+    #if you don't want to be prompted you can hardcode your credential in the script
+    #$password = ConvertTo-SecureString “PlainTextPassword” -AsPlainText -Force
+    #$cred = New-Object System.Management.Automation.PSCredential (“CustomUserName”, $password)
+    
+    Install-Connector `
+        -Credential $cred `
+        -UseDelineaMirror -Verbose
+    ```
+    
+    ---
+    
+    **Note**
+    This script assumes your environment has an internet connection. If not, please check https://thycotic.github.io/rabbitmq-helper/installation/ for you Scenario.
+    
+    ---
+     
 13. Hit Enter to execute the lines
 14. The user name and the password are provided by the Secret Server as shown after clicking **View Credentials**
     
