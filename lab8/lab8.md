@@ -220,8 +220,16 @@ Now that we have paved the way, we need to tell the Discovery Scanner to also ru
 
    ![Scantemplates](images/ss-adv-0104.png)
 
+7. Click the Pencil icon next to the right of the line that mentions **SQL Login Discovery Scanner**
+7. In the next screen click **Add Secret** and select the AD Sync secret
+
+   ![Scantemplates](images/ss-adv-0105.png)
+
+7. Click on **OK** now the Scanner will be run using the set secret
+
 7. Click the **BACK** button the return back to the domain
-8. In the top of the screen, click **Admin > Discovery**
+7. Open the Windows Explorer and create a folder on the **C:\\** called **scripts**
+7. Back in the Secret Server UI, in the top of the screen, click **Admin > Discovery**
 9. Click **Run Discovery Now > Run Computer Scan** to run the scanner including the SQL Scanner
 10. Wait till the Computer Scan has ended. It should read **Just Now**
 11. Click on **Discovery Network View**
