@@ -68,7 +68,7 @@ Click the link as you see it mentioning in the email. You may be asked to provid
 Starting your environment
 *************************
 
-Once in your environment you will ss in the top right corner a "play" menu. Is your environment has not started, click the "Play" button. It will take approx 5-10 minutes for the environment is running.
+Once in your environment you will see in the top right corner a "Play" button which you must click if your environment has not started. It will take approx 5-10 minutes for the environment to start.
 
 .. figure:: images/lab002.png
 
