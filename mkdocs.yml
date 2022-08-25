@@ -1,0 +1,76 @@
+site_name: Secret Server Advanced
+site_url: https://workshop.thyintresources.com/secretserver-adv/
+dev_addr: '127.0.0.1:8005'
+theme:
+  name: material
+  
+  font:
+    text: Manrope
+  
+  logo: img/Delinea.svg
+  
+  favicon: img/favicon.ico
+  
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      primary: black
+      toggle:
+        icon: material/weather-night 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: black
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  
+  icon:
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+
+  features:
+    - search.highlight
+
+plugins:
+  - search
+  - with-pdf:
+      author: Delinea Technical Enablement
+      cover_logo: images/secretserver.jpg
+      cover_title: Secret Server Advanced
+      copyright: Delinea
+      debug_html: true
+      enabled_if_env: ENABLE_PDF_EXPORT
+extra:
+  generator: false
+
+
+nav:
+  - Home: index.md
+  - Configure Site Connector: lab1/lab1.md
+  - Add Site: lab2/lab2.md
+  - Discovery of the second domain: lab3/lab3.md
+  - Proxying SSh and RDP: lab4/lab4.md
+  - Secrets manipulation using folders: lab5/lab5.md
+  - Teams: lab6/lab6.md
+  - Hooks in secrets: lab7/lab7.md
+  - Custom Discovery: lab8/lab8.md
+  - Custom Remote Password Changer: lab9/lab9.md
+  - Disaster Recovery: lab10/lab10.md
+  - Summarize the lab: lab11/lab11.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
