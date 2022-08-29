@@ -2,6 +2,7 @@
 _build
 builds
 build
+site
 # Sources Documents and executables
 *.exe
 *.pdf
