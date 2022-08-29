@@ -5,19 +5,19 @@ name: default
 steps:
 - name: Sync Files (Main)
   commands:
+  # If errored execute, make sure we don't have anything left
+  - rm -Rf /tmp/$DRONE_REPO_NAME
+  - rm -Rf /tmp/$DRONE_COMMIT_SHA
   # Get the repo and build the HTML files
   - git clone --branch main "https://github.com/wessenstam/$DRONE_REPO_NAME/" /tmp/$DRONE_COMMIT_SHA
-  - docker run --rm -v /home/ubuntu/www/html/:/develop -v /tmp/$DRONE_COMMIT_SHA:/web wessenstam/sphinx_server:2.2 /usr/bin/sphinx-build -a . /develop/$DRONE_REPO_NAME
+  - docker run --rm --cpus="0.5" -v /home/ubuntu/www/html/:/develop -v /tmp/${DRONE_COMMIT_SHA}:/docs wessenstam/mkdocs:0.3 build -d /develop/${DRONE_REPO_NAME}
   - chown -Rf ubuntu:ubuntu /home/ubuntu/www/html/$DRONE_REPO_NAME
-  # Use the files to create the PDF
-  - docker run --rm -v /tmp/$DRONE_COMMIT_SHA:/docs wessenstam/sphinx_latexpdf make latexpdf
-  - cp /tmp/$DRONE_COMMIT_SHA/_build/latex/*.pdf /home/ubuntu/www/html/$DRONE_REPO_NAME/
   # Clean up
   - rm -Rf /tmp/$DRONE_COMMIT_SHA
-  
   when:
     branch:
     - main
+    
 - name: Build Dev HTML(dev)
   commands:
   - rm -Rf /tmp/$DRONE_REPO_NAME
