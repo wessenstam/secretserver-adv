@@ -18,11 +18,11 @@ steps:
   when:
     branch:
     - main
-  
 - name: Build Dev HTML(dev)
   commands:
+  - rm -Rf /tmp/$DRONE_REPO_NAME
   - git clone --branch dev "https://github.com/wessenstam/$DRONE_REPO_NAME/" /tmp/$DRONE_REPO_NAME
-  - docker run --rm -v /var/www/html:/develop -v /tmp/$DRONE_REPO_NAME:/web wessenstam/sphinx_server:2.2 /usr/bin/sphinx-build -a . /develop/$DRONE_REPO_NAME/dev
+  - docker run --rm -v /var/www/html:/develop -v /tmp/${DRONE_REPO_NAME}:/docs wessenstam/mkdocs:0.3 build -d /develop/dev/${DRONE_REPO_NAME}
   - rm -Rf /tmp/$DRONE_REPO_NAME
   when:
     branch:
