@@ -1,6 +1,7 @@
 # Summarize the lab
 
 To summarize what has been done:
+
 1. Setup a Site Connector based on RabbitMQ
 2. Define a site thylab.local
 3. Deploy a Distributed Engine in the site
@@ -19,7 +20,7 @@ The total network traffic with respect to the Secret Server, the RabbitMQ and th
 
 ![Infra - SSPM+RabbitMQ+DEs](images/lab-40a.png)
 
-Which simplified is the same as the earlier shown picture
+Which simplified, is the same as the earlier shown picture
 
 ![Infra - SSPM+RabbitMQ+DEs](images/lab-11a.png)
 
