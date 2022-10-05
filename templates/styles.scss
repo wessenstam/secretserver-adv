@@ -1,0 +1,52 @@
+@page {
+    @top-center {
+      font-size: 8pt;
+      background-image: url("file:///C:/Users/WEssenstam.DELINEA/github/secretserver-adv/docs/img/header.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 25%;
+      content: "                                                                                                                                                                                                                                                                                                                                                                                                                            ";
+    }
+    @top-right {
+      color: white;
+    }
+    @bottom-right {
+      font-size: 8pt;
+      background-image: url("file:///C:/Users/WEssenstam.DELINEA/github/secretserver-adv/docs/img/Delinea_logo.svg");
+      background-repeat: no-repeat;
+      background-size: 90%;
+      background-position: right center;
+      content: "                        ";
+    }
+    
+}
+
+@page:first {
+  @top-center {
+    background-image: url("file:///C:/Users/WEssenstam.DELINEA/github/secretserver-adv/docs/img/header_first_page.jpg");
+      background-size: 100%;
+      content: "                                                                                                                                                                                                                                                                                                                                                                                                                            ";
+    }
+}
+
+article h1 {
+  border-bottom: 2px solid #00b95a; }
+
+article h2 {
+  border-bottom: 1px solid #00b95a; }
+
+article h3 {
+  border-bottom: 0.5px solid #00b95a; }
+
+  @media print {
+    html {
+      font-size: 95%;
+      font-family: 'Manrope'; }
+    body {
+      font-size: 10.5pt;
+      font-family: 'Manrope'; }
+    label {
+      font-family: 'Manrope'; }
+    tt {
+      font-family: 'Manrope';
+      font-size: 0.8em; }
+}

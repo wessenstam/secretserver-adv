@@ -47,7 +47,7 @@ plugins:
   - search
   - with-pdf:
       author: Delinea Technical Enablement
-      cover_logo: images/secretserver.jpg
+      cover_logo: img/secretserver.jpg
       cover_title: Secret Server Advanced
       copyright: Delinea
       debug_html: true
