@@ -223,8 +223,6 @@ Now that we have paved the way, we need to tell the Discovery Scanner to also ru
 7. Click the Pencil icon next to the right of the line that mentions **SQL Login Discovery Scanner**
 7. In the next screen click **Add Secret** and select the AD Sync secret
 
-   ![Scantemplates](images/ss-adv-0105.png)
-
 7. Click on **OK** now the Scanner will be run using the set secret
 
 7. Click the **BACK** button the return back to the domain
