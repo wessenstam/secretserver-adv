@@ -197,7 +197,7 @@ For this part of the lab we are going to Scan for the SQL Server logins that hav
    - **Script:** SQL Login Discovery
    - **Script Arguments:** $target $[1]$Domain $[1]$Username $[1]$Password
 
-   ![Scantemplates](images/ss-adv-0100.png)
+    ![Scantemplates](images/ss-adv-0100.png)
 
 7. Click **Ok**
 
@@ -208,17 +208,17 @@ Now that we have paved the way, we need to tell the Discovery Scanner to also ru
 1. Navigate to **Administration >> > Discovery**
 2. Click the **thylab.local** domain and click **Scanner Settings**
 
-   ![Scantemplates](images/ss-adv-0101.png)
+    ![Scantemplates](images/ss-adv-0101.png)
 
 3. In the *FIND ACCOUNTS* section, click **+Add New Account Scanner**
 4. Click on the **+** symbol to add the scanner
 
-   ![Scantemplates](images/ss-adv-0102.png)
+    ![Scantemplates](images/ss-adv-0102.png)
 
 5. Click **OK**
 6. The new scanner should be mentioned in the list of *FIND ACCOUNTS*
 
-   ![Scantemplates](images/ss-adv-0104.png)
+    ![Scantemplates](images/ss-adv-0104.png)
 
 7. Click the Pencil icon next to the right of the line that mentions **SQL Login Discovery Scanner**
 7. In the next screen click **Add Secret** and select the AD Sync secret
